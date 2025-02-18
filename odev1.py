@@ -13,11 +13,13 @@ print("mod",sayi1 % sayi2)
 
 #bölüm2
 #kullanıcıdan bir sayı alıyoruz
-n = int(input("Bir sayı giriniz: "))
+sayi = int(input("Bir sayı girin: "))
+toplam = 0
 
-#sayıların 1 den sayı1 e kadar olan sayıların toplamı
-toplam = sum(range(1, n+1))
-print("1'den n'e kadar olan sayıların toplamı: ",toplam)
+for i in range(1, sayi + 1):
+    toplam += i
+
+print(f"1'den {sayi}'a kadar olan sayıların toplamı: {toplam}")
 
 #bölüm3
 #1 ile 100 arasındaki çift sayıları ekrana yazdırma
